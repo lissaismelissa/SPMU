@@ -1,0 +1,258 @@
+body  {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    min-height: 100vh;
+}
+
+aside {
+    flex: 550px;
+    float: left;
+    position:static;
+    background: orange;
+    min-height: 100vh;
+    padding: 1% 2.5%;
+    color: #ffffff;
+}
+
+aside img {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+aside .logo {
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+
+}
+
+.navigation {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 10px 20px 10px 20px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    background-color:bisque;
+}
+
+aside h3{
+    margin-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: darkorange;
+}
+
+
+aside p, main .creators{
+    padding: 0;
+    color:darkred;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 25px;
+    border-color:rgb(253, 197, 129);
+    background-color:rgb(253, 197, 129);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+aside p:hover, main .creators:hover{
+    color: darkred;
+    text-decoration: none;
+    transform: scale(1.05);
+    background-color:darkorange; /* Green */
+    color: white;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 25px 0 rgba(0,0,0,0.19);
+}
+
+main .creators{
+    padding: 10px 20px;
+}
+
+aside a{
+    text-decoration: none;
+}
+main {
+    width: 100vw;
+}
+
+main .right {
+    position: relative;
+    background-image: url(https://ruskidom.rs/wp-content/uploads/2019/07/SAINT-PETERSBURG-MINING-UNIVERSITY.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding-right: 0;
+}
+
+main .features {
+    float: left;
+    color: rgb(255, 111, 0);
+    margin-top: 100px;
+    text-align: center;
+    background-color: white;
+    opacity: 0.9;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+main .glav {
+    font-size: 50px;
+    padding-top: 30px;
+}
+
+main .features p {
+    text-align: center;
+    font-size: large;
+    padding: 20px 100px;
+    margin-top: 20px;
+    position: relative;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+main .vypusk{
+    padding-top: -20px;
+}
+
+main .features img {
+    max-width: 200px;
+    object-fit: cover;
+    float: left;
+    position: relative;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 25px 0 rgba(0,0,0,0.19);
+}
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 95%;
+    margin: 2%;
+    text-align: center;
+}
+
+form {
+    margin: 30px auto;
+    padding: 20px;
+    width: 500px;
+    background-color: orange;
+    border-radius: 25px;
+}
+.navbar {
+    background: orange;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+.pagi{
+    margin: 20px auto;
+}
+
+.btn-outline-success{
+    padding: 0;
+    color:darkred;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px;
+    width: 120px;
+    border-radius: 25px;
+    border-color:#ffffff;
+    background-color:#ffffff;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+ .btn-outline-success:hover{
+     background: rgb(58, 139, 58);
+     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 25px 0 rgba(0,0,0,0.19);
+ }
+
+ .btn-warning{
+    padding: 0;
+    color:#664d03;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px;
+    width: 200px;
+    border-radius: 25px;
+    background-color:#ffc107;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+ }
+
+ .btn-warning:hover{
+    background: #ffffff;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 25px 0 rgba(0,0,0,0.19);
+}
+
+.info{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    margin: 45px 70px;
+}
+
+.info p{
+    text-align: left !important;
+    position: 0 auto;
+}
+
+.btn-info{
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 0 20px;
+    min-width: 150px;
+    border-radius: 25px;
+    border-color:rgb(58, 139, 58);
+    background-color:rgb(58, 139, 58);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-style: none;
+}
+
+.btn-info:hover{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 25px 0 rgba(0,0,0,0.19);
+    color: rgb(58, 139, 58);
+}
+
+.btn-danger{
+    color: #ffffff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 0 20px;
+    min-width: 150px;
+    border-radius: 25px;
+    border-color:darkred;
+    background-color: darkred;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.btn-danger:hover{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 10px 25px 0 rgba(0,0,0,0.19);
+    color: darkred;
+}

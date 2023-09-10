@@ -1,0 +1,13 @@
+{% extends 'main_page/layout.html' %}
+
+{% block title %}Все выпускники{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Здесь отображаются все выпускники</h1>
+        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+        <a href="{% url 'create' %}"><button class="btn btn-warning" >Добавить выпускника</button></a>
+    </div>
+{% endblock %}
+
+

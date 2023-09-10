@@ -1,0 +1,20 @@
+{% extends 'main_page/layout.html' %}
+
+{% block title %}{{ column.title }}{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ column.title }}</h1>
+         <div class="info">
+             <div>
+             <img src="{{ column.photo }}">
+             </div>
+             <div>
+                 <p>{{ column.info }} <br>
+                 <a href="{{ column.link }}"> Ссылка на страницу в Википедии</a></p>
+             </div>
+        </div>
+        <a href="{% url 'column_delete' column.id %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'column_update' column.id %}" class="btn btn-info">Редактировать</a>
+    </div>
+{% endblock %}

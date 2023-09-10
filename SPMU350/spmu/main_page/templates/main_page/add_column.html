@@ -1,0 +1,17 @@
+{% extends 'main_page/layout.html' %}
+
+{% block title %}Форма по добавлению выпускника{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма по добавлению выпускника</h1>
+        <form method="post">
+            <input type="text" placeholder="ФИО выпускника" class="form-control"><br>
+            <input type="text" placeholder="Ссылка на выпускника" class="form-control"><br>
+            <button class="btn btn-success" type="submit">Добавить выпускника</button>
+        </form>
+    </div>
+    <a href="{% url 'home' %}"><button class="btn btn-warning" >На главную страницу</button></a>
+{% endblock %}
+
+

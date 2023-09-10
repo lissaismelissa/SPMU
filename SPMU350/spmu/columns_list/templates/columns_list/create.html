@@ -1,0 +1,18 @@
+{% extends 'main_page/layout.html' %}
+
+{% block title %}Форма по добавлению выпускника{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Форма по добавлению выпускника</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.title }}<br>
+            {{ form.link }}<br>
+            {{ form.info }}<br>
+            {{ form.photo }}<br>
+            <span>{{ error }}</span>
+            <button class="btn-info" type="submit">Добавить выпускника</button>
+        </form>
+    </div>
+{% endblock %}

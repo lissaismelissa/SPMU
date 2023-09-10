@@ -1,0 +1,17 @@
+{% extends 'main_page/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="right">
+        <div class="features">
+            <h1 class="glav">{{ title }}</h1>
+            <p>Добро пожаловать на сайт, посвященный предстающему 250-летию Санкт-Петербургского Университета! В честь этого события мы, студентки группы ИАС-20-1 Благополучная Елизавета и Плотникова Полина, разработали курсовой проект, осуществляющий передачу информации о выдающихся выпускниках нашего университета через API.</p>
+            <a href="{% url 'about' %}" class="creators" style='text-decoration: none'>На страницу про создателей сайта</a>
+
+            {% for el in values %}
+                <p>{{ el }}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
